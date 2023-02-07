@@ -19,8 +19,8 @@ public class ActivityPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_principal);
 
         btnagregar = (Button) findViewById(R.id.btn_ingresar);
-        btnlista = (Button) findViewById(R.id.btn_combo);
-        btncombo = (Button) findViewById(R.id.btn_lista);
+        btnlista = (Button) findViewById(R.id.btn_lista);
+        btncombo = (Button) findViewById(R.id.btn_combo);
         btnagregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
