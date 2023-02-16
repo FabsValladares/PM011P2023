@@ -16,7 +16,7 @@
         app:srcCompat="@drawable/usuario" />
 
     <Button
-        android:id="@+id/btnfotos"
+        android:id="@+id/btnfoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#0D5963"

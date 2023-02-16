@@ -8,10 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class ActivityPrincipal extends AppCompatActivity {
 
     Button btnagregar, btnlista,btncombo;
+    ImageButton imageButton;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +23,7 @@ public class ActivityPrincipal extends AppCompatActivity {
         btnagregar = (Button) findViewById(R.id.btn_ingresar);
         btnlista = (Button) findViewById(R.id.btn_lista);
         btncombo = (Button) findViewById(R.id.btn_combo);
+        imageButton = (ImageButton) findViewById(R.id.imageButton);
         btnagregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +49,14 @@ public class ActivityPrincipal extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), ActivityCombo.class);
                 startActivity(intent);
             }
+        });
+            imageButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //codigo llamar un activity
+                    Intent intent = new Intent(getApplicationContext(), ActivityPhoto.class);
+                    startActivity(intent);
+                }
         });
     }
 }
